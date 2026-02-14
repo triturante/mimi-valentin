@@ -32,13 +32,13 @@ function processCommand(cmd) {
         res.innerHTML = "readme.md &nbsp;&nbsp; recuerdos.html &nbsp;&nbsp; playlist.html";
     } else if (cmd === 'cat readme.md') {
         res.innerHTML = "Abriendo documentación...";
-        setTimeout(() => window.location.href = "../modules/readme.html", 1000);
+        setTimeout(() => window.location.href = "modules/readme.html", 1000);
     } else if (cmd === 'open universes') {
         res.innerHTML = "Accediendo a galería...";
-        setTimeout(() => window.location.href = "../modules/recuerdos.html", 1000);
+        setTimeout(() => window.location.href = "modules/recuerdos.html", 1000);
     } else if (cmd === 'play music') {
         res.innerHTML = "Iniciando stream...";
-        setTimeout(() => window.location.href = "../modules/playlist.html", 1000);
+        setTimeout(() => window.location.href = "modules/playlist.html", 1000);
     } else if (cmd === 'clear') {
         history.innerHTML = "";
         return;
