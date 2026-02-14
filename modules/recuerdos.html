@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Us in every universe!</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Estilos específicos para la galería */
+        .gallery-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .gallery-header {
+            border-bottom: 2px solid #ff2d55;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        .grid-recuerdos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .foto-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .foto-card:hover {
+            transform: scale(1.03);
+            border-color: #ff2d55;
+        }
+
+        .foto-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Esto hace que las fotos no se deformen */
+            border-radius: 4px;
+        }
+
+        .foto-card p {
+            font-size: 0.8em;
+            margin-top: 10px;
+            color: #ced4da;
+            text-align: center;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            color: #ff2d55;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-container">
+        <div class="gallery-header">
+            <h1>📂 ARCHIVE: San_Valentín_en_cada_Universo!</h1>
+            <p class="sys">Porque nuestro amor trasciende este mundo y nuestro día a día...</p>
+        </div>
+
+        <div class="grid-recuerdos">
+            <div class="foto-card">
+                <img src="../img/02-ANTONWONBIN.jpg">
+                <p>Mimi & Omi gays pt. 1</p>
+            </div>
+
+            <div class="foto-card">
+                <img src="../img/01-NOBUNANA.jpg">
+                <p>Nobu & Nana</p>
+            </div>
+
+            <div class="foto-card">
+                <img src="../img/03-WINRINA.jpg">
+                <p>Mimi & Omi lesbianas</p>
+            </div>
+            <div class="foto-card">
+                <img src="../img/04-REEDSUE.jpg">
+                <p>Sue & Reed Richards</p>
+            </div>
+            <div class="foto-card">
+                <img src="../img/05-WINTERANTON.jpg">
+                <p>Mimi & Omi heteros pt. 1</p>
+            </div>
+            <div class="foto-card">
+                <img src="../img/06-CINNAPOCHACCO.jpg">
+                <p>Cinnamoroll & Pochacco</p>
+            </div>
+            <div class="foto-card">
+                <img src="../img/07-JAEWOO.jpg">
+                <p>Mimi & Omi gays pt. 2</p>
+            </div>
+            <div class="foto-card">
+                <img src="../img/08-GENCY.jpg">
+                <p>Mercy & Genji</p>
+            </div>
+            <div class="foto-card">
+                <img src="../img/09-KIRIKOJUNO.jpg">
+                <p>Juno & Kiriko</p>
+            </div>
+            <div class="foto-card">
+                <img src="../img/10-ANNRYUJI.jpg">
+                <p>Ann & Ryuji</p>
+            </div>
+            <div class="foto-card">
+                <img src="../img/11-MARCIEANDBUBBLEGUM.jpg">
+                <p>Bonnie & Marceline</p>
+            </div>
+            <div class="foto-card">
+                <img src="../img/12-BEBESKIUPAI.png">
+                <p>Kewpie Conejo & Kewpie Monkey</p>
+            </div>
+            <div class="foto-card to-be-continued">
+                <div class="tbc-content">
+                    <span class="tbc-arrow">◀</span> 
+                    <span class="tbc-text">To Be Continued...</span>
+                </div>
+            </div>
+            </div>
+
+        <a href="../index.html" class="back-btn">_VOLVER_A_TERMINAL</a>
+    </div>
+
+</body>
+</html>

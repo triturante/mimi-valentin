@@ -1,0 +1,145 @@
+/* --- ESTILOS GENERALES (TERMINAL) --- */
+body {
+    background-color: #0a0a0a;
+    color: #ff0040; /* Verde terminal para el texto general */
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+    margin: 0;
+}
+
+.prompt { color: #ff2d73; } /* Rosa San Valentín */
+
+input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    width: 80%;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.sys { color: #555; font-style: italic; }
+.res { color: #ced4da; margin-bottom: 10px; }
+
+/* --- CONTENEDORES DE SECCIONES --- */
+.content-page {
+    max-width: 900px;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Herencia de look terminal */
+.readme-body, .gallery-container, .audio-container, .card, .content-container {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+/* --- GRID DE UNIVERSOS (RECUERDOS) --- */
+.grid-recuerdos {
+    display: grid;
+    grid-template-columns: 1fr; /* Base: 1 columna (móvil) */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.foto-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.foto-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.foto-card:hover {
+    transform: scale(1.03);
+    border-color: #ff2d55;
+}
+
+/* --- TARJETA TO BE CONTINUED (ESTILO FULL TERMINAL) --- */
+.to-be-continued {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000 !important;
+    border: 1px solid #ff0059 !important; /* Borde verde terminal */
+    min-height: 120px; /* Reducimos altura para que no flote en la nada */
+    grid-column: 1 / -1; /* Ocupa todo el ancho del grid */
+    margin: 10px 0; /* Espaciado mínimo exterior */
+    padding: 0 !important; /* ELIMINAMOS EL ESPACIO FEO DE ADENTRO */
+    border-radius: 0 !important; /* Bordes rectos para look más dev */
+}
+
+/* El bloque interno ahora se ajusta al contenedor */
+.tbc-content {
+    width: 100%; /* Que ocupe todo el ancho del recuadro */
+    background-color: rgba(125, 125, 125, 0.1); /* Un fondo sutil verde */
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid #ff0044; /* Línea divisoria de sistema */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tbc-text {
+    color: #ff008c;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Más espacio entre letras para look de carga */
+    font-size: 1.5rem;
+}
+
+/* El parpadeo del cursor */
+.tbc-text::after {
+    content: "_";
+    animation: blink 1s infinite;
+    color: #ff2d55; /* Cursor rosa para contraste */
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Texto de sistema inferior */
+.to-be-continued p {
+    color: #ff0090;
+    font-size: 0.7rem;
+    margin: 10px 0;
+    opacity: 0.5;
+    font-family: 'Courier New', monospace;
+}
+/* --- RESPONSIVE / MEDIA QUERIES --- */
+
+/* Celular / Tablet pequeña */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        padding: 15px;
+    }
+    /* El To Be Continued ya ocupa todo el ancho por la regla de arriba */
+}
+
+/* PC / Pantallas grandes */
+@media (min-width: 768px) {
+    .grid-recuerdos {
+        grid-template-columns: repeat(3, 1fr) !important; /* 3 columnas en PC */
+    }
+}

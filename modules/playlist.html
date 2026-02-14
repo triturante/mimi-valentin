@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>music-time.mp3</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .audio-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            padding: 20px;
+        }
+
+        /* Contenedor tipo "Monitor Antiguo" */
+        .terminal-frame {
+            border: 2px solid #ff0000;
+            padding: 10px;
+            background: rgba(255, 0, 0, 0.05);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+            position: relative;
+        }
+
+        /* Título con parpadeo suave */
+        .status-header {
+            color: #ff0000;
+            font-family: 'Courier New', monospace;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Quitamos el fondo sólido del iframe */
+        iframe {
+            border: 1px solid #333;
+            /* Lo verdeamos un poco */
+        }
+
+        .back-link {
+            margin-top: 30px;
+            color: #ff2d55;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px dashed #ff2d55;
+            padding: 5px 15px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            background: #ff2d55;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-wrapper">
+        <div class="status-header">
+            [MELODÍAS_PARA_EL_CORAZÓN...]
+        </div>
+        
+        <div class="terminal-frame">
+            <iframe style="border-radius:0px" 
+                src="https://open.spotify.com/embed/playlist/3w2W7PWW5HlG3UQ1YKcgmT?utm_source=generator" 
+                width="300" 
+                height="380" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <a href="../index.html" class="back-link">> SALIR_DEL_STREAM</a>
+    </div>
+</body>
+</html>
